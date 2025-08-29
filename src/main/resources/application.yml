@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: practice
+
+  config:
+    import:
+      - optional:classpath:application-secret.yml
+      - optional:file:/app/config/application-secret.yml
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.web.client.DefaultRestClient: OFF
