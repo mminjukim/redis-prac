@@ -9,10 +9,11 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
 
 logging:
   level:
     root: INFO
     org.springframework.web: DEBUG
     org.springframework.web.client.DefaultRestClient: OFF
+    org.springframework.cache: trace
