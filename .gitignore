@@ -38,4 +38,3 @@ out/
 
 ### secrets
 application-secret.yml
-application-test.yml
